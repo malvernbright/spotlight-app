@@ -1,5 +1,6 @@
-import { Image, TouchableOpacity, View } from "react-native";
-import { styles } from "../../styles/auth.styles";
+import { Link } from "expo-router";
+import { Image, Text, TouchableOpacity, View } from "react-native";
+import { styles } from "../styles/auth.styles";
 
 export default function Index() {
   return (
@@ -10,6 +11,9 @@ export default function Index() {
         style={{ width: 300, height: 300, borderRadius: 50, marginTop: 20 }}
       />
       </TouchableOpacity>
+      <Link href={"notifications" as any} style={{ marginTop: 20, padding: 10, borderRadius: 5 }}>
+        <Text>Notifications</Text>
+      </Link>
     </View>
   );
 }
