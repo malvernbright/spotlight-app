@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "spotlight-app",
-    "slug": "spotlight-app",
+    "slug": "spotlight",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.malvernbright.spotlight"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cf4850de-f96e-49dd-9e18-c6861215b5fd"
+      }
+    },
+    "owner": "malvernbright.95"
   }
 }
